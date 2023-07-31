@@ -1,13 +1,14 @@
+import Categories from "@/components/Categories";
 import SearchInput from "@/components/SearchInput";
-import { UserButton } from "@clerk/nextjs";
-import { FC } from "react";
+import prismadb from "@/lib/prismaDb";
 
-interface pageProps {}
+const page = async ({}) => {
+  const categories = await prismadb.category.findMany();
 
-const page: FC<pageProps> = ({}) => {
   return (
     <div className="h-full p-4 space-y-2">
       <SearchInput />
+      <Categories data={categories} />
     </div>
   );
 };
