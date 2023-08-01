@@ -150,7 +150,7 @@ const CompanionForm: FC<CompanionFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={isLoading}
-                      placeholder="Pudge"
+                      placeholder="Elon Musk"
                       {...field}
                     />
                   </FormControl>
@@ -170,12 +170,12 @@ const CompanionForm: FC<CompanionFormProps> = ({
                   <FormControl>
                     <Input
                       disabled={isLoading}
-                      placeholder="Pudge a rotting carcass"
+                      placeholder="CEO of Tesla and SpaceX"
                       {...field}
                     />
                   </FormControl>
                   <FormDescription>
-                    Short description for your dota companion.
+                    Short description for your AI Companion.
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -221,7 +221,7 @@ const CompanionForm: FC<CompanionFormProps> = ({
             <div>
               <h3 className="text-lg font-medium">Confiugration</h3>
               <p className="text-sm text-muted-foreground">
-                Detailed instructions for ai behavior
+                Detailed Instructions for your AI Companion
               </p>
             </div>
             <Separator className="bg-primary/10" />
